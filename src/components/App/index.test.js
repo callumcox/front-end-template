@@ -5,8 +5,8 @@ import "@testing-library/jest-dom/extend-expect";
 import App from ".";
 
 describe("<App>", () => {
-  it("renders Hello there!", () => {
+  it("renders 'Hello there! I'm INACTIVE' by default", () => {
     const result = render(<App />);
-    expect(result.getByText("Hello there!")).toBeInTheDocument();
+    expect(result.getByText("Hello there! I'm INACTIVE")).toBeInTheDocument();
   });
 });
